@@ -21,7 +21,6 @@ public class Main {
     }
     public static void writeToFile(Person p) throws IOException {
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("Person.bin"));
-
         objectOutputStream.writeObject(p);
     }
     public static void readFile() throws IOException, ClassNotFoundException{

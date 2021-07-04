@@ -3,10 +3,11 @@ package com.company;
 import java.io.Serializable;
 
 public class Person implements Serializable {
-    private String name;
-    private String lastName;
+    private final String name;
+    private final String lastName;
     public Person(String name, String lastName){
         this.name = name;
+        this.lastName = lastName;
     }
     @Override
     public String toString() {
